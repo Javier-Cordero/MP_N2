@@ -1,0 +1,4 @@
+id_usuario,nombres,apellidos,direccion,correo,dni,edad,fecha_creacion,telefono
+1,John,Doe,Calle Falsa 123,john@example.com,12345678,30,2024-03-01,123-456-7890
+2,Jane,Smith,Avenida Principal 456,jane@example.com,87654321,25,2024-03-01,987-654-3210
+3,Alice,Johnson,Plaza Central 789,alice@example.com,13579246,35,2024-03-01,456-789-0123
