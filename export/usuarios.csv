@@ -1,0 +1,6 @@
+ID,NOMBRE,APELLIDO,DIRECCION,CORREO,DNI,EDAD,FECHA_CREACION,TELEFONO
+ 1,Juan,Pérez,Av. Principal 123,juan.perez@email.com,12345678,35,Sat Jun 08 2024 00:00:00 GMT-0400 (hora estándar del Atlántico),123-456-789
+ 2,María,García,Calle Secundaria 456,maria.garcia@email.com,98765432,28,Fri Jun 07 2024 00:00:00 GMT-0400 (hora estándar del Atlántico),987-654-321
+ 3,José,Martínez,Plaza Mayor 789,jose.martinez@email.com,54321678,42,Thu Jun 06 2024 00:00:00 GMT-0400 (hora estándar del Atlántico),543-216-789
+ 4,Laura,Rodríguez,Paseo de la Libertad 12,laura.rodriguez@email.com,24681357,31,Wed Jun 05 2024 00:00:00 GMT-0400 (hora estándar del Atlántico),246-813-579
+ 5,Carlos,López,Av. de la Constitución 1,carlos.lopez@email.com,13579246,29,Tue Jun 04 2024 00:00:00 GMT-0400 (hora estándar del Atlántico),135-792-468
