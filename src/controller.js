@@ -1,3 +1,4 @@
+import validator from 'validator'
 import fs from 'fs/promises'
 import { pool } from './db.js'
 export const index = async (req, res) => {
@@ -42,8 +43,10 @@ export const importUser = async (req, res) => {
     const FECHA_CREACION = datos[6]
     const TELEFONO = datos[7]
     try {
-      await pool.execute('INSERT INTO usuarios (NOMBRE, APELLIDO, DIRECCION, CORREO, DNI, EDAD, FECHA_CREACION, TELEFONO) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [NOMBRE, APELLIDO, DIRECCION, CORREO, DNI, EDAD, FECHA_CREACION, TELEFONO])
-      console.log('se inserto los datos de: ', NOMBRE)
+      if (validator.isEmail(CORREO)) {
+        await pool.execute('INSERT INTO usuarios (NOMBRE, APELLIDO, DIRECCION, CORREO, DNI, EDAD, FECHA_CREACION, TELEFONO) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [NOMBRE, APELLIDO, DIRECCION, CORREO, DNI, EDAD, FECHA_CREACION, TELEFONO])
+        console.log('se inserto los datos de: ', NOMBRE)
+      }
     } catch (error) {
       if (error.code === 'ER_DUP_ENTRY') {
         console.log('no se inserto los datos de: ', NOMBRE)
